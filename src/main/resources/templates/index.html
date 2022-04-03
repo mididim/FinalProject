@@ -39,6 +39,11 @@
 
     <h6 th:text="${sum}"></h6>
 
-    <br>
+    <br/>
+    <h2>History</h2>
+    <div th:each="h : ${history}">
+        <h6 th:text="${h.sum}"></h6>
+    </div>
+    <br/>
 </body>
 </html>
